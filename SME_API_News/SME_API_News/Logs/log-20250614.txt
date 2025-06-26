@@ -1,0 +1,24 @@
+2025-06-14 11:26:27.226 +07:00 [INF] Starting web application
+2025-06-14 13:35:15.404 +07:00 [INF] Starting web application
+2025-06-14 14:33:16.429 +07:00 [INF] Starting web application
+2025-06-14 14:34:21.319 +07:00 [INF] Starting web application
+2025-06-14 14:35:49.923 +07:00 [INF] Starting web application
+2025-06-14 14:40:19.655 +07:00 [INF] Starting web application
+2025-06-14 14:40:57.281 +07:00 [INF] Starting web application
+2025-06-14 16:01:35.702 +07:00 [INF] Starting web application
+2025-06-14 16:59:41.637 +07:00 [INF] Starting web application
+2025-06-14 16:59:56.185 +07:00 [INF] Starting web application
+2025-06-14 17:00:49.997 +07:00 [INF] Starting web application
+2025-06-14 17:28:56.832 +07:00 [INF] Starting web application
+2025-06-14 17:28:56.987 +07:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at SME_API_News.Program.Main(String[] args) in D:\Git_project\SI_GIT_PROJECT\SI_News\SME_API_News\SME_API_News\Program.cs:line 114
+2025-06-14 17:59:45.491 +07:00 [INF] Starting web application
+2025-06-14 19:23:37.151 +07:00 [INF] Starting web application

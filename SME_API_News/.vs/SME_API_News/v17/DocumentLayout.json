@@ -1,0 +1,357 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\repository\\idropdrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\repository\\idropdrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\repository\\dropdrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\repository\\dropdrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\repository\\inewsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\repository\\inewsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\controllers\\dropdrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\controllers\\dropdrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\models\\dropdownmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\models\\dropdownmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\models\\morganizationmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\models\\morganizationmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\models\\employeemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\models\\employeemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\repository\\usermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\repository\\usermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\service\\hremployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\service\\hremployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\service\\callapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\service\\callapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\controllers\\mpopupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\controllers\\mpopupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\service\\icallapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\service\\icallapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\controllers\\apiinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\controllers\\apiinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\repository\\newsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\repository\\newsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\entities\\mnews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\entities\\mnews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\models\\mnewsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\models\\mnewsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|d:\\git_project\\si_git_project\\si_news\\sme_api_news\\sme_api_news\\entities\\newsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73DEE92-E9C8-4ABA-87BF-80FE059C4F34}|SME_API_News\\SME_API_News.csproj|solutionrelative:sme_api_news\\entities\\newsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DropdrowRepository.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\DropdrowRepository.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Repository\\DropdrowRepository.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\DropdrowRepository.cs",
+              "RelativeToolTip": "SME_API_News\\Repository\\DropdrowRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:04:40.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DropdownModels.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\DropdownModels.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Models\\DropdownModels.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\DropdownModels.cs",
+              "RelativeToolTip": "SME_API_News\\Models\\DropdownModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:04:25.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IDropdrowRepository.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\IDropdrowRepository.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Repository\\IDropdrowRepository.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\IDropdrowRepository.cs",
+              "RelativeToolTip": "SME_API_News\\Repository\\IDropdrowRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:04:02.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MOrganizationModels.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\MOrganizationModels.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Models\\MOrganizationModels.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\MOrganizationModels.cs",
+              "RelativeToolTip": "SME_API_News\\Models\\MOrganizationModels.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wBIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:03:30.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DropdrowController.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\DropdrowController.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Controllers\\DropdrowController.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\DropdrowController.cs",
+              "RelativeToolTip": "SME_API_News\\Controllers\\DropdrowController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAA4wG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:02:35.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Controllers\\NewsController.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "SME_API_News\\Controllers\\NewsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T01:38:59.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "INewsRepository.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\INewsRepository.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Repository\\INewsRepository.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\INewsRepository.cs",
+              "RelativeToolTip": "SME_API_News\\Repository\\INewsRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA5wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T02:29:56.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Program.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Program.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Program.cs",
+              "RelativeToolTip": "SME_API_News\\Program.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAYwI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T15:33:20.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeModels.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\EmployeeModels.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Models\\EmployeeModels.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\EmployeeModels.cs",
+              "RelativeToolTip": "SME_API_News\\Models\\EmployeeModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T09:55:52.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserManagementController.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\UserManagementController.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Controllers\\UserManagementController.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\UserManagementController.cs",
+              "RelativeToolTip": "SME_API_News\\Controllers\\UserManagementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:18:39.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HrEmployeeService.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Service\\HrEmployeeService.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Service\\HrEmployeeService.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Service\\HrEmployeeService.cs",
+              "RelativeToolTip": "SME_API_News\\Service\\HrEmployeeService.cs",
+              "ViewState": "AgIAAIQBAAAAAAAAAAAUwJgBAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:18:51.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserManagementRepository.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\UserManagementRepository.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Repository\\UserManagementRepository.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\UserManagementRepository.cs",
+              "RelativeToolTip": "SME_API_News\\Repository\\UserManagementRepository.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAUwEIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T01:38:59.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MPopupController.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\MPopupController.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Controllers\\MPopupController.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\MPopupController.cs",
+              "RelativeToolTip": "SME_API_News\\Controllers\\MPopupController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAuwHIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T11:52:36.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ICallAPIService.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Service\\ICallAPIService.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Service\\ICallAPIService.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Service\\ICallAPIService.cs",
+              "RelativeToolTip": "SME_API_News\\Service\\ICallAPIService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T04:37:49.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CallAPIService.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Service\\CallAPIService.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Service\\CallAPIService.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Service\\CallAPIService.cs",
+              "RelativeToolTip": "SME_API_News\\Service\\CallAPIService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T04:37:48.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MNews.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Entities\\MNews.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Entities\\MNews.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Entities\\MNews.cs",
+              "RelativeToolTip": "SME_API_News\\Entities\\MNews.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAADgvy0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:53:04.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\appsettings.json",
+              "RelativeDocumentMoniker": "SME_API_News\\appsettings.json",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\appsettings.json",
+              "RelativeToolTip": "SME_API_News\\appsettings.json",
+              "ViewState": "AgIAAA4AAAAAAAAAAABRwA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-09T12:00:20.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NewsRepository.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\NewsRepository.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Repository\\NewsRepository.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Repository\\NewsRepository.cs",
+              "RelativeToolTip": "SME_API_News\\Repository\\NewsRepository.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowFIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T01:38:59.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MNewsModels.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\MNewsModels.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Models\\MNewsModels.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Models\\MNewsModels.cs",
+              "RelativeToolTip": "SME_API_News\\Models\\MNewsModels.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwDEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:29:41.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NewsDBContext.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Entities\\NewsDBContext.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Entities\\NewsDBContext.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Entities\\NewsDBContext.cs",
+              "RelativeToolTip": "SME_API_News\\Entities\\NewsDBContext.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAApwLUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T11:59:40.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApiInformationController.cs",
+              "DocumentMoniker": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\ApiInformationController.cs",
+              "RelativeDocumentMoniker": "SME_API_News\\Controllers\\ApiInformationController.cs",
+              "ToolTip": "D:\\Git_project\\SI_GIT_PROJECT\\SI_News\\SME_API_News\\SME_API_News\\Controllers\\ApiInformationController.cs",
+              "RelativeToolTip": "SME_API_News\\Controllers\\ApiInformationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T03:19:26.175Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

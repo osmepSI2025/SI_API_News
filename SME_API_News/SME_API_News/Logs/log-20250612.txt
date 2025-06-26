@@ -1,0 +1,12 @@
+2025-06-12 07:42:57.812 +07:00 [INF] Starting web application
+2025-06-12 07:42:58.701 +07:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at SME_API_News.Program.Main(String[] args) in D:\Git_project\SI_GIT_PROJECT\SI_News\SME_API_News\SME_API_News\Program.cs:line 114
+2025-06-12 07:44:29.124 +07:00 [INF] Starting web application
