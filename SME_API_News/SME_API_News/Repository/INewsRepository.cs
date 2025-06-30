@@ -7,7 +7,7 @@ namespace SME_API_News.Repository
     {
         Task<ViewMNewsModels> GetAllAsync(MNewsModels param);
         Task<MNewsModels> GetByIdAsync(int id);
-        Task AddAsync(MNewsModels news);
+        Task<int> AddAsyncNews(MNewsModels news);
         Task UpdateAsync(MNews news);
         Task DeleteAsync(int id);
         Task<bool> ExistsAsync(int id);

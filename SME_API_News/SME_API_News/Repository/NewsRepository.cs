@@ -14,40 +14,44 @@ public class NewsRepository : INewsRepository
 
     public async Task<ViewMNewsModels> GetAllAsync(MNewsModels param)
     {
-        ViewMNewsModels result= new ViewMNewsModels();
+        ViewMNewsModels result = new ViewMNewsModels();
         result.SearchMNewsModels = param;
         List<MNewsModels> news = new List<MNewsModels>();
-        try 
+        try
         {
 
-            var query = (from u in _context.MNews 
-                         join c in _context.MCategories  on u.CatagoryCode equals c.CategorieCode
+            var query = (from u in _context.MNews
+                         join c in _context.MCategories on u.CatagoryCode equals c.CategorieCode
 
-                         select new MNewsModels 
+                         select new MNewsModels
                          {
-                         Id = u.Id,
-                         ArticlesTitle =u.ArticlesTitle,
-                         ArticlesAutherName=u.ArticlesAutherName,
-                             CatagoryCode =  u.CatagoryCode,
-                         ArticlesContent=u.ArticlesContent,
-                         IsPublished    = u.IsPublished,
-                         PublishDate = u.PublishDate,
-                         StartDate = u.StartDate,
-                         EndDate    = u.EndDate,
-                         CreateBy = u.CreateBy,
-                         CreateDate = u.CreateDate,
-                         UpdateBy = u.UpdateBy,
-                         UpdateDate = u.UpdateDate,
-                         IsPin = u.IsPin,
+                             Id = u.Id,
+                             ArticlesTitle = u.ArticlesTitle,
+                             ArticlesAutherName = u.ArticlesAutherName,
+                             CatagoryCode = u.CatagoryCode,
+                             ArticlesContent = u.ArticlesContent,
+                             IsPublished = u.IsPublished,
+                             PublishDate = u.PublishDate,
+                             StartDate = u.StartDate,
+                             EndDate = u.EndDate,
+                             CreateBy = u.CreateBy,
+                             CreateDate = u.CreateDate,
+                             UpdateBy = u.UpdateBy,
+                             UpdateDate = u.UpdateDate,
+                             IsPin = u.IsPin,
                              CatagoryName = c.CategorieNameTh
-                             ,ArticlesShortDescription = u.ArticlesShortDescription,
-                              BusinessUnitId = u.BusinessUnitId
-                              , CoverFilePath = u.CoverFilePath
-                              , PicNewsFilePath = u.PicNewsFilePath
-                              , NewsFilePath = u.NewsFilePath
+                             ,
+                             ArticlesShortDescription = u.ArticlesShortDescription,
+                             BusinessUnitId = u.BusinessUnitId
                               ,
-                             FileNameOriginal =u.FileNameOriginal,
-                             OrderId=u.OrderId,
+                             CoverFilePath = u.CoverFilePath
+                              ,
+                             PicNewsFilePath = u.PicNewsFilePath
+                              ,
+                             NewsFilePath = u.NewsFilePath
+                              ,
+                             FileNameOriginal = u.FileNameOriginal,
+                             OrderId = u.OrderId,
                          });
 
             if (param != null)
@@ -61,7 +65,7 @@ public class NewsRepository : INewsRepository
                 {
                     query = query.Where(item => item.CatagoryCode == param.CatagoryCode);
                 }
-                if (param.ArticlesAutherName != null && param.ArticlesAutherName !="")
+                if (param.ArticlesAutherName != null && param.ArticlesAutherName != "")
                 {
                     query = query.Where(item => item.ArticlesAutherName.Contains(param.ArticlesAutherName));
                 }
@@ -74,9 +78,9 @@ public class NewsRepository : INewsRepository
 
                     query = query.Where(item => item.StartDate >= param.StartDate.Value.Date && item.EndDate.Value.Date <= param.EndDate.Value.Date);
                 }
-                if (param.PublishDate != null )
+                if (param.PublishDate != null)
                 {
-                    query = query.Where(item => item.PublishDate.Value.Date == param.PublishDate.Value.Date );
+                    query = query.Where(item => item.PublishDate.Value.Date == param.PublishDate.Value.Date);
                 }
 
                 if (param.FlagPage == "PIN")
@@ -91,11 +95,11 @@ public class NewsRepository : INewsRepository
       .ThenBy(x => x.OrderId);          // จากน้อยไปมาก
                     }
                 }
-                else 
+                else
                 {
                     query = query.OrderByDescending(x => x.CreateDate);
                 }
-         
+
                 //find total
                 result.TotalRowsList = query.Count();
 
@@ -104,16 +108,16 @@ public class NewsRepository : INewsRepository
                     query = query.Skip<MNewsModels>(param.rowOFFSet).Take(param.rowFetch);
                 }
             }
-                news = query.ToList();
+            news = query.ToList();
 
             result.ListTMNewsModels = query.ToList();
             return result;
         }
-        catch 
+        catch
         {
             return result;
         }
-      
+
     }
 
     public async Task<MNewsModels> GetByIdAsync(int id)
@@ -122,7 +126,8 @@ public class NewsRepository : INewsRepository
         try
         {
 
-            var query = (from u in _context.MNews where u.Id == id
+            var query = (from u in _context.MNews
+                         where u.Id == id
                          select u
                          ).First();
 
@@ -141,19 +146,19 @@ public class NewsRepository : INewsRepository
                 news.CreateDate = query.CreateDate;
                 news.UpdateBy = query.UpdateBy;
                 news.UpdateDate = query.UpdateDate;
-               news.IsPin = query.IsPin;
+                news.IsPin = query.IsPin;
                 news.ArticlesShortDescription = query.ArticlesShortDescription;
                 news.BusinessUnitId = query.BusinessUnitId;
                 return news;
             }
-            else 
+            else
             {
                 return null;
             }
 
-       
 
-          
+
+
         }
         catch
         {
@@ -161,29 +166,38 @@ public class NewsRepository : INewsRepository
         }
     }
 
-    public async Task AddAsync(MNewsModels news)
+    public async Task<int> AddAsyncNews(MNewsModels news)
     {
-        MNews xdata =new MNews();
-        xdata.ArticlesContent = news.ArticlesContent;
-        xdata.ArticlesTitle = news.ArticlesTitle;
-        xdata.ArticlesAutherName= news.ArticlesAutherName;
-        xdata.CatagoryCode = news.CatagoryCode;
-        xdata.PublishDate = news.PublishDate;
-        xdata.StartDate = news.StartDate;
-        xdata.EndDate = news.EndDate;
-        xdata.IsPublished = news.IsPublished;
-        xdata.CreateDate = DateTime.Now;
-        xdata.IsPin = news.IsPin;
-        xdata.ArticlesShortDescription = news.ArticlesShortDescription;
-        xdata.BusinessUnitId = news.BusinessUnitId;
-        xdata.CoverFilePath = news.CoverFilePath;
-        xdata.PicNewsFilePath = news.PicNewsFilePath;
-        xdata.NewsFilePath = news.NewsFilePath;
-        xdata.FileNameOriginal = news.FileNameOriginal;
+        int newId = 0;
+        try
+        {
+            MNews xdata = new MNews();
+            xdata.ArticlesContent = news.ArticlesContent;
+            xdata.ArticlesTitle = news.ArticlesTitle;
+            xdata.ArticlesAutherName = news.ArticlesAutherName;
+            xdata.CatagoryCode = news.CatagoryCode;
+            xdata.PublishDate = news.PublishDate;
+            xdata.StartDate = news.StartDate;
+            xdata.EndDate = news.EndDate;
+            xdata.IsPublished = news.IsPublished;
+            xdata.CreateDate = DateTime.Now;
+            xdata.IsPin = news.IsPin;
+            xdata.ArticlesShortDescription = news.ArticlesShortDescription;
+            xdata.BusinessUnitId = news.BusinessUnitId;
+            xdata.CoverFilePath = news.CoverFilePath;
+            xdata.PicNewsFilePath = news.PicNewsFilePath;
+            xdata.NewsFilePath = news.NewsFilePath;
+            xdata.FileNameOriginal = news.FileNameOriginal;
 
-
-        _context.MNews.Add(xdata);
-        await _context.SaveChangesAsync();
+            _context.MNews.Add(xdata);
+            await _context.SaveChangesAsync();
+            newId = xdata.Id; // Assuming the database generates the ID after saving
+        }
+        catch (Exception ex)
+        {
+            // Log the exception if necessary
+        }
+        return newId;
     }
 
     public async Task UpdateAsync(MNews news)
@@ -193,9 +207,9 @@ public class NewsRepository : INewsRepository
             _context.Entry(news).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
-        catch (Exception ex) 
+        catch (Exception ex)
         {
-        
+
         }
     }
 

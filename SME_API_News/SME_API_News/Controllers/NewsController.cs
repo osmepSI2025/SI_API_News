@@ -63,8 +63,10 @@ namespace SME_API_News.Controllers
         [Route("CreateNews")]
         public async Task<ActionResult<MNewsModels>> PostNews(MNewsModels news)
         {
-            await _repository.AddAsync(news);
-            return CreatedAtAction(nameof(GetNews), new { id = news.Id }, news);
+            int resut = await _repository.AddAsyncNews(news);
+            news.Id = resut; // Set the generated id to news.Id
+
+            return CreatedAtAction(nameof(GetNews), new { id = resut }, news);
         }
 
         [HttpPut("{id}")]
