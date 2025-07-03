@@ -94,7 +94,46 @@ public class CategoryRepository : ICategoryRepository
 
     public async Task UpdateAsync(MCategory category)
     {
-        _context.MCategories.Update(category);
+        var existingCategory = await _context.MCategories.FindAsync(category.Id);
+        if (existingCategory == null)
+        {
+            // You can throw an exception or handle as needed
+            throw new InvalidOperationException("Category not found.");
+        }
+
+        // Optionally, update only the fields you want to allow to change
+        if(category.CategorieCode != null)
+        {
+            existingCategory.CategorieCode = category.CategorieCode;
+        }
+        if (category.CategorieNameEn != null)
+        {
+            existingCategory.CategorieNameEn = category.CategorieNameEn;
+        }
+        if (category.CategorieNameTh != null)
+        {
+            existingCategory.CategorieNameTh = category.CategorieNameTh;
+        }
+        if (category.Description != null)
+        {
+            existingCategory.Description = category.Description;
+        }
+        if (category.IsActive != null)
+        {
+            existingCategory.IsActive = category.IsActive;
+        }
+        if (category.UpdateBy != null)
+        {
+            existingCategory.UpdateBy = category.UpdateBy;
+        }
+        if (category.OrderId != null)
+        {
+            existingCategory.OrderId = category.OrderId;
+        }
+        
+        existingCategory.UpdateBy = category.UpdateBy;
+        existingCategory.UpdateDate = DateTime.UtcNow;     
+
         await _context.SaveChangesAsync();
     }
 
