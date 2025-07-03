@@ -15,6 +15,7 @@ namespace SME_API_News.Repository
         Task RemoveTagAsync(int newsId, int tagId);
 
         Task UpdateRangeAsync(MNews news);
-        
+        Task<bool> UpdateStatusActiveNews(MNewsModels param);
+
     }
 }

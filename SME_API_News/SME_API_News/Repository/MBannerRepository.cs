@@ -129,6 +129,28 @@ namespace SME_API_News.Repository
                 return result;
             }
         }
+
+        public async Task<bool> UpdateStatusBanner(BannerModels param)
+        {
+            try
+            {
+                var existing = await _context.MBanners.FindAsync(param.Id);
+                if (existing != null)
+                {
+                    existing.FlagActive = param.FlagActive;
+                    existing.UpdateBy = param.UpdateBy;
+                    existing.UpdateDate = DateTime.Now;
+                    await _context.SaveChangesAsync();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+
+            }
+        }
+
     }
 
 }

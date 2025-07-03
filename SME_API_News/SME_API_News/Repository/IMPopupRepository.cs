@@ -12,5 +12,6 @@ namespace SME_API_News.Repository
         Task UpdateAsync(MPopup popup);
          Task<ActionResult<int>>DeleteAsync(int id);
         Task<ViewPopupModels> GetPopup(PopupModels models);
+        Task<bool> UpdateStatusActivePopup(PopupModels models);
     }
 }

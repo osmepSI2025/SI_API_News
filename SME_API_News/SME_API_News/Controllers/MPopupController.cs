@@ -122,6 +122,32 @@ namespace SME_API_News.Controllers
             vm.TotalRowsList = ldata.TotalRowsList;
             return Ok(vm);
         }
+
+        [HttpPost]
+        [Route("UpdateStatusActivePopup")]
+        [ProducesResponseType(typeof(ViewMNewsModels), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
+        public async Task<bool> UpdateStatusActivePopup([FromBody] PopupModels param)
+        {
+            try
+            {
+                if (param == null || param.Id <= 0)
+                {
+                    return false;
+                }
+                await _repository.UpdateStatusActivePopup(param);
+                return true;
+            }
+            catch
+            (Exception ex)
+            {
+                return false;
+            }
+            // Example for EF Core, adjust for your data access method
+
+        }
+
     }
 
 

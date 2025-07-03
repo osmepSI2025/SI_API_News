@@ -101,6 +101,8 @@ namespace SME_API_News.Controllers
                 PicNewsFilePath = Mnews.PicNewsFilePath,
                 NewsFilePath = Mnews.NewsFilePath
                 ,OrderId = Mnews.OrderId
+                ,FileNameOriginal = Mnews.FileNameOriginal,
+
             };
 
 
@@ -151,18 +153,30 @@ namespace SME_API_News.Controllers
               
             }
         }
-        //[HttpPost("{newsId}/tags/{tagId}")]
-        //public async Task<ActionResult> AddTag(int newsId, int tagId)
-        //{
-        //    await _newsService.AddTagToNewsAsync(newsId, tagId);
-        //    return NoContent();
-        //}
 
-        //[HttpDelete("{newsId}/tags/{tagId}")]
-        //public async Task<ActionResult> RemoveTag(int newsId, int tagId)
-        //{
-        //    await _newsService.RemoveTagFromNewsAsync(newsId, tagId);
-        //    return NoContent();
-        //}
+        [HttpPost]
+        [Route("UpdateStatusActiveNews")]
+        [ProducesResponseType(typeof(ViewMNewsModels), 200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
+        public  async Task<bool> UpdateStatusActiveNews([FromBody] MNewsModels param)
+        {
+            try 
+            {
+                  if (param == null || param.Id <= 0)
+                {
+                    return false;
+                }
+                  await _repository.UpdateStatusActiveNews(param);
+                return true;
+            }
+            catch
+            (Exception ex) 
+            {
+                return false;
+            }
+            // Example for EF Core, adjust for your data access method
+           
+        }
     }
 }

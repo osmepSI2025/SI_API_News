@@ -110,7 +110,7 @@ namespace SME_API_News.Repository
                     }
                     if (param.StartDateTime != null)
                     {
-                        query = query.Where(item => item.StartDateTime.Value.Date<= param.StartDateTime.Value.Date);
+                        query = query.Where(item => item.StartDateTime.Value.Date <= param.StartDateTime.Value.Date);
                         query = query.Where(item => item.EndDateTime.Value.Date >= param.StartDateTime.Value.Date);
                     }
                     //find total
@@ -131,6 +131,30 @@ namespace SME_API_News.Repository
                 return result;
             }
         }
+        public async Task<bool> UpdateStatusActivePopup(PopupModels param)
+        {
+            try
+            {
+                var existing = await _context.MPopups.FindAsync(param.Id);
+                if (existing != null)
+                {
+
+                    existing.FlagActive = param.FlagActive;
+
+                    existing.UpdateBy = param.UpdateBy;
+                    existing.UpdateDate = DateTime.Now;
+                    await _context.SaveChangesAsync();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+
+            }
+        }
+
+
     }
 
 

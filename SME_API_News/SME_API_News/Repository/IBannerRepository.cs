@@ -14,5 +14,6 @@ namespace SME_API_News.Repository
         Task UpdateAsync(MBanner banner);
          Task<ActionResult<int>>DeleteAsync(int id);
         Task<ViewBannerNewsModels> GetBanner(BannerModels models);
+        Task<bool> UpdateStatusBanner(BannerModels models);
     }
 }

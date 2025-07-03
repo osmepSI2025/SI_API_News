@@ -82,12 +82,18 @@ public class NewsRepository : INewsRepository
                 {
                     query = query.Where(item => item.PublishDate.Value.Date == param.PublishDate.Value.Date);
                 }
+              
+                if (param.BusinessUnitId != null && param.BusinessUnitId != "")
+                {
+                    query = query.Where(item => item.BusinessUnitId == param.BusinessUnitId);
+                }
 
                 if (param.FlagPage == "PIN")
                 {
 
                     if (param.IsPin != null)
                     {
+                        query = query.Where(item => item.IsPublished == true);
                         query = query.Where(item => item.IsPin == true);
                         //range query order by orderid
                         query = query
@@ -95,8 +101,18 @@ public class NewsRepository : INewsRepository
       .ThenBy(x => x.OrderId);          // จากน้อยไปมาก
                     }
                 }
+                else if (param.FlagPage == "SEARCH") 
+                {
+                    //if (param.IsPublished != null)
+                    //{
+                    //    query = query.Where(item => item.IsPublished == param.IsPublished);
+                    //}
+                    query = query.OrderByDescending(x => x.CreateDate);
+                }
+
                 else
                 {
+                    query = query.Where(item => item.IsPublished == true);
                     query = query.OrderByDescending(x => x.CreateDate);
                 }
 
@@ -268,5 +284,31 @@ public class NewsRepository : INewsRepository
     {
         return await _context.MTags.ToListAsync();
     }
-    // Create a ProductController for basic CRUD using Entity Framework
+    public async Task<bool> UpdateStatusActiveNews(MNewsModels news)
+    {
+        try
+        {
+            var existing = await _context.MNews.FindAsync(news.Id);
+            if (existing != null)
+            {
+                if (news.FlagPage =="PIN") 
+                {
+                    existing.IsPin = news.IsPin;
+                }
+                if (news.FlagPage == "ACTIVE") 
+                {
+                    existing.IsPublished = news.IsPublished;
+                }
+                existing.UpdateBy = news.UpdateBy;
+                existing.UpdateDate = DateTime.Now;
+                await _context.SaveChangesAsync();
+            }
+            return true;
+        }
+        catch (Exception ex)
+        {return false;
+
+        }
+    }
+
 }
