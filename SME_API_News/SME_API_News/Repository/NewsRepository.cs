@@ -204,6 +204,7 @@ public class NewsRepository : INewsRepository
             xdata.PicNewsFilePath = news.PicNewsFilePath;
             xdata.NewsFilePath = news.NewsFilePath;
             xdata.FileNameOriginal = news.FileNameOriginal;
+            xdata.CreateBy = news.CreateBy;
 
             _context.MNews.Add(xdata);
             await _context.SaveChangesAsync();
@@ -220,12 +221,91 @@ public class NewsRepository : INewsRepository
     {
         try
         {
-            _context.Entry(news).State = EntityState.Modified;
+            var existing = await _context.MNews.FindAsync(news.Id);
+            if (existing == null)
+            {
+                // Handle not found (throw, return, or log as needed)
+                throw new InvalidOperationException("News not found.");
+            }
+
+
+            // Update only the fields you want to allow to change
+            if(news.ArticlesAutherName != null) 
+            {
+                existing.ArticlesAutherName= news.ArticlesAutherName;
+            }
+            if (news.ArticlesTitle != null) 
+            {
+                existing.ArticlesTitle = news.ArticlesTitle;
+            }
+            if (news.CatagoryCode != null) 
+            {
+                existing.CatagoryCode = news.CatagoryCode;
+            }
+            if (news.ArticlesContent != null) 
+            {
+                existing.ArticlesContent = news.ArticlesContent;
+            }
+            if (news.ArticlesShortDescription != null) 
+            {
+                existing.ArticlesShortDescription = news.ArticlesShortDescription;
+            }
+            if (news.BusinessUnitId != null) 
+            {
+                existing.BusinessUnitId = news.BusinessUnitId;
+            }
+            if (news.CoverFilePath != null) 
+            {
+                existing.CoverFilePath = news.CoverFilePath;
+            }
+            if (news.PicNewsFilePath != null) 
+            {
+                existing.PicNewsFilePath = news.PicNewsFilePath;
+            }
+            if (news.NewsFilePath != null) 
+            {
+                existing.NewsFilePath = news.NewsFilePath;
+            }
+            if (news.FileNameOriginal != null) 
+            {
+                existing.FileNameOriginal = news.FileNameOriginal;
+            }
+            if (news.OrderId != null) 
+            {
+                existing.OrderId = news.OrderId;
+            }
+            if(news.StartDate !=null) 
+            {
+                existing.StartDate = news.StartDate;
+            }
+            if (news.EndDate != null) 
+            {
+                existing.EndDate = news.EndDate;
+            }
+            if (news.PublishDate != null) 
+            {
+                existing.PublishDate = news.PublishDate;
+            }
+            if (news.IsPublished != null) 
+            {
+                existing.IsPublished = news.IsPublished;
+            }
+            if (news.IsPin != null) 
+            {
+                existing.IsPin = news.IsPin;
+            }
+
+
+
+            existing.UpdateBy = news.UpdateBy;
+            existing.UpdateDate = DateTime.Now;
+
+
             await _context.SaveChangesAsync();
         }
         catch (Exception ex)
         {
-
+            // Optionally log the exception
         }
     }
 

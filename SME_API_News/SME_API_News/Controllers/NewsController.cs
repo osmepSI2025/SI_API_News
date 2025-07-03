@@ -92,9 +92,8 @@ namespace SME_API_News.Controllers
                 PublishDate = Mnews.PublishDate,
                 StartDate = Mnews.StartDate,
                 EndDate = Mnews.EndDate,
-                IsPublished = Mnews.IsPublished,
-                CreateBy = "System", // Replace with actual user context
-                CreateDate = DateTime.UtcNow,
+                IsPublished = Mnews.IsPublished,             
+            
                 IsPin = Mnews.IsPin,
                 BusinessUnitId = Mnews.BusinessUnitId,
                 CoverFilePath = Mnews.CoverFilePath,
@@ -102,12 +101,15 @@ namespace SME_API_News.Controllers
                 NewsFilePath = Mnews.NewsFilePath
                 ,OrderId = Mnews.OrderId
                 ,FileNameOriginal = Mnews.FileNameOriginal,
+                UpdateBy = Mnews.UpdateBy
 
             };
 
 
             await _repository.UpdateAsync(news);
-            return NoContent();
+
+            var newsReturn = await _repository.GetByIdAsync(Mnews.Id);
+            return Ok(newsReturn);
         }
 
         [HttpDelete("{id}")]
