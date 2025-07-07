@@ -57,7 +57,7 @@ namespace SME_API_News.Repository
             try
             {
                 var query = (from u in _context.MCategories
-                         //    where u.FlagActive == "Y" && u.FlagDelete == "N"
+                             where u.IsActive ==true
                              select new DropdownModels
                              {
                                  Code = u.CategorieCode,

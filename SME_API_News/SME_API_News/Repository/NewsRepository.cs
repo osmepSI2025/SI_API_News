@@ -107,11 +107,13 @@ public class NewsRepository : INewsRepository
                     //{
                     //    query = query.Where(item => item.IsPublished == param.IsPublished);
                     //}
+                
                     query = query.OrderByDescending(x => x.CreateDate);
                 }
 
                 else
                 {
+                    query = query.Where(item => item.IsPin == param.IsPin);
                     query = query.Where(item => item.IsPublished == true);
                     query = query.OrderByDescending(x => x.CreateDate);
                 }

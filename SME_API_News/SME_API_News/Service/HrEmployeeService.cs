@@ -284,25 +284,36 @@ namespace SME_API_News.Service
             };
             var lDepartment = await GetDepartment();
             var lPosition = await GetPosition();
-            
-            var lEmployee = await GetEmpByBu(buId);
+
+            var lempinTable = await _repositoryUserManagement.GetAllAsync();
+          
+            var setEmpHr = await GetEmpByBu(buId);
+
+            // Remove employees from setEmpHr.Results that exist in lempinTable based on EmployeeId/EmployeeCode
+            var lEmployee = setEmpHr.Results
+                .Where(e => !lempinTable.Any(t => t.EmployeeCode == e.EmployeeId))
+                .ToList();
             if (!string.IsNullOrEmpty(models.EmployeeName))
             {
-                var emolist = lEmployee.Results
-                        .Where(e => e.NameTh != null && e.NameTh.Contains(models.EmployeeName, StringComparison.OrdinalIgnoreCase))
+                var emolist = lEmployee
+                    .Where(e => e.NameTh != null && e.NameTh.Contains(models.EmployeeName, StringComparison.OrdinalIgnoreCase))
                     .ToList();
 
                 if (emolist.Count != 0)
                 {
-                    lEmployee.Results = emolist; // Update the Results property instead of reassigning the entire object
+                    lEmployee = emolist; // Update the lEmployee list directly
+                }
+                else 
+                {
+                    return new ViewEmployeeRoleModels();
                 }
             }
-        
-            vm.TotalRowsList = lEmployee.Results.Count();
+
+            vm.TotalRowsList = lEmployee.Count();
             if (lEmployee != null)
             {
                 // Apply paging
-                var pagedResults = lEmployee.Results
+                var pagedResults = lEmployee
                     .Skip(models.rowOFFSet)
                     .Take(models.rowFetch)
                     .ToList();
