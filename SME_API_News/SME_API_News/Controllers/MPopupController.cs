@@ -104,6 +104,8 @@ namespace SME_API_News.Controllers
             UpdateDate = m.UpdateDate,
             CreateBy = m.CreateBy,
             UpdateBy = m.UpdateBy
+           ,LinkUrl=m.LinkUrl,
+            PublishDate =m.PublishDate
         };
 
         [HttpPost]

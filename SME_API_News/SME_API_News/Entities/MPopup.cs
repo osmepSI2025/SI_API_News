@@ -26,4 +26,8 @@ public partial class MPopup
     public string? CreateBy { get; set; }
 
     public string? UpdateBy { get; set; }
+
+    public string? LinkUrl { get; set; }
+
+    public DateTime? PublishDate { get; set; }
 }

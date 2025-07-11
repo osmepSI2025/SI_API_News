@@ -88,7 +88,8 @@ namespace SME_API_News.Repository
                                  StartDateTime = c.StartDateTime,
                                  EndDateTime = c.EndDateTime,
                                  FlagActive = c.FlagActive,
-
+                                 LinkUrl = c.LinkUrl,
+                                 PublishDate =c.PublishDate,
 
 
                              });

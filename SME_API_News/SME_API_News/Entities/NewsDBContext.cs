@@ -37,6 +37,8 @@ public partial class NewsDBContext : DbContext
 
     public virtual DbSet<TComment> TComments { get; set; }
 
+    public virtual DbSet<TEmployeeLineOa> TEmployeeLineOas { get; set; }
+
     public virtual DbSet<TEmployeeRole> TEmployeeRoles { get; set; }
 
     public virtual DbSet<TNewsTag> TNewsTags { get; set; }
@@ -195,6 +197,8 @@ public partial class NewsDBContext : DbContext
             entity.Property(e => e.CreateDate).HasColumnType("datetime");
             entity.Property(e => e.EndDateTime).HasColumnType("datetime");
             entity.Property(e => e.ImageUrl).HasMaxLength(500);
+            entity.Property(e => e.LinkUrl).HasMaxLength(500);
+            entity.Property(e => e.PublishDate).HasColumnType("datetime");
             entity.Property(e => e.StartDateTime).HasColumnType("datetime");
             entity.Property(e => e.Title).HasMaxLength(250);
             entity.Property(e => e.UpdateBy).HasMaxLength(50);
@@ -237,6 +241,26 @@ public partial class NewsDBContext : DbContext
             entity.Property(e => e.NewsId).HasColumnName("news_id");
             entity.Property(e => e.UpdateBy).HasMaxLength(50);
             entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+        });
+
+        modelBuilder.Entity<TEmployeeLineOa>(entity =>
+        {
+            entity.ToTable("T_EmployeeLineOA");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.EmployeeId).HasMaxLength(50);
+            entity.Property(e => e.LineOaAccessToken).HasColumnName("LineOA_AccessToken");
+            entity.Property(e => e.LineOaDateJoined)
+                .HasColumnType("datetime")
+                .HasColumnName("LineOA_DateJoined");
+            entity.Property(e => e.LineOaDisplayName)
+                .HasMaxLength(200)
+                .HasColumnName("LineOA_DisplayName");
+            entity.Property(e => e.LineOaPictureUrl).HasColumnName("LineOA_PictureUrl");
+            entity.Property(e => e.LineOaRefreshToken).HasColumnName("LineOA_RefreshToken");
+            entity.Property(e => e.LineOaUserId)
+                .HasMaxLength(200)
+                .HasColumnName("LineOA_UserId");
         });
 
         modelBuilder.Entity<TEmployeeRole>(entity =>
