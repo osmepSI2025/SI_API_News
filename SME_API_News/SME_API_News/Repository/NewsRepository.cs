@@ -113,7 +113,11 @@ public class NewsRepository : INewsRepository
 
                 else
                 {
-                    query = query.Where(item => item.IsPin == param.IsPin);
+                    if (param.IsPin != null )
+                    {
+                        query = query.Where(item => item.IsPin == param.IsPin);
+                    }
+          
                     query = query.Where(item => item.IsPublished == true);
                     query = query.OrderByDescending(x => x.CreateDate);
                 }
