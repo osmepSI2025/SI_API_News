@@ -96,6 +96,7 @@ namespace SME_API_News.Controllers
             Id = m.Id,
             Title = m.Title,
             Description = m.Description,
+           
             ImageUrl = m.ImageUrl,
             StartDateTime = m.StartDateTime,
             EndDateTime = m.EndDateTime,

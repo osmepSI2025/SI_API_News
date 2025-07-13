@@ -38,9 +38,32 @@ namespace SME_API_News.Repository
 
         public async Task UpdateAsync(MBanner banner)
         {
-            banner.UpdateDate = DateTime.Now;
-            _context.Set<MBanner>().Update(banner);
-            await _context.SaveChangesAsync();
+            var existingBanner = await _context.Set<MBanner>().FindAsync(banner.Id);
+            if (existingBanner != null)
+            {
+                if (!string.IsNullOrEmpty(banner.LinkUrl))
+                {
+                    existingBanner.LinkUrl = banner.LinkUrl;
+                }
+                if (!string.IsNullOrEmpty(banner.Title))
+                {
+                    existingBanner.Title = banner.Title;
+                }
+                if (!string.IsNullOrEmpty(banner.ImageUrl))
+                {
+                    existingBanner.ImageUrl = banner.ImageUrl;
+                }
+                existingBanner.Description = banner.Description;
+                existingBanner.FlagActive = banner.FlagActive;
+                existingBanner.StartDateTime = banner.StartDateTime;
+                existingBanner.EndDateTime = banner.EndDateTime;
+                existingBanner.SortOrder = banner.SortOrder;
+                existingBanner.UpdateBy = banner.UpdateBy;
+                existingBanner.UpdateDate = DateTime.Now;
+
+                _context.Set<MBanner>().Update(existingBanner);
+                await _context.SaveChangesAsync();
+            }
         }
 
         public async Task<ActionResult<int>> DeleteAsync(int id)

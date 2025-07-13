@@ -36,9 +36,40 @@ namespace SME_API_News.Repository
 
         public async Task UpdateAsync(MPopup popup)
         {
-            popup.UpdateDate = DateTime.Now;
-            _context.MPopups.Update(popup);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var existingPopup = await _context.MPopups.FindAsync(popup.Id);
+                if (existingPopup != null)
+                {
+                    if (!string.IsNullOrEmpty(popup.ImageUrl))
+                    {
+                        existingPopup.ImageUrl = popup.ImageUrl;
+                    }
+                    if (!string.IsNullOrEmpty(popup.LinkUrl))
+                    {
+                        existingPopup.LinkUrl = popup.LinkUrl;
+                    }
+                    if (!string.IsNullOrEmpty(popup.Title))
+                    {
+                        existingPopup.Title = popup.Title;
+                    }
+                   
+                    existingPopup.Description = popup.Description;
+                    existingPopup.StartDateTime = popup.StartDateTime;
+                    existingPopup.EndDateTime = popup.EndDateTime;
+                    existingPopup.FlagActive = popup.FlagActive;
+                    existingPopup.PublishDate = popup.PublishDate;
+                    existingPopup.CreateBy = popup.CreateBy;
+                    existingPopup.UpdateDate = DateTime.Now;
+
+                    _context.MPopups.Update(existingPopup);
+                    await _context.SaveChangesAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Optionally log the exception
+            }
         }
 
         public async Task<ActionResult<int>> DeleteAsync(int id)
