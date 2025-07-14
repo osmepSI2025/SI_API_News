@@ -93,7 +93,10 @@ public class NewsRepository : INewsRepository
 
                     if (param.IsPin != null)
                     {
-                        query = query.Where(item => item.IsPublished == true);
+                        if (param.IsPublished != null)
+                        {
+                            query = query.Where(item => item.IsPublished == param.IsPublished);
+                        }
                         query = query.Where(item => item.IsPin == true);
                         //range query order by orderid
                         query = query
@@ -103,11 +106,15 @@ public class NewsRepository : INewsRepository
                 }
                 else if (param.FlagPage == "SEARCH") 
                 {
-                    //if (param.IsPublished != null)
-                    //{
-                    //    query = query.Where(item => item.IsPublished == param.IsPublished);
-                    //}
-                
+                    if (param.IsPublished != null)
+                    {
+                        query = query.Where(item => item.IsPublished == param.IsPublished);
+                    }
+                    if (param.PublishDate != null)
+                    {
+                        query = query.Where(item => item.PublishDate == param.PublishDate);
+                    }
+
                     query = query.OrderByDescending(x => x.CreateDate);
                 }
 
