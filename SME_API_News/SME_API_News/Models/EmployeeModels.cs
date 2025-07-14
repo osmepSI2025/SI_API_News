@@ -78,7 +78,9 @@ namespace SME_API_News.Models
         [JsonPropertyName("positionId")]
         public string? PositionId { get; set; }
         public string? RoleCode { get; set; }
-        
+
+        public string? BusinessUnitName { get; set; }
+
     }
 
 

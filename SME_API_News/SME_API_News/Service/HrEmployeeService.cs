@@ -418,7 +418,9 @@ namespace SME_API_News.Service
                         var emdetail = result.FirstOrDefault();
                         //find RoleCode in result.FirstOrDefault().RoleCode;
                         var EmroleCode = await _repositoryUserManagement.GetByEmpRoleAsync(emdetail.EmployeeId);
-
+                        var lDepartment = await GetDepartment();
+                        string departname = lDepartment.Results
+                            .FirstOrDefault(x => x.BusinessUnitId == result.FirstOrDefault().BusinessUnitId)?.NameTh ?? "-";
                         EmployeeResult newData = new EmployeeResult
                         {
                             EmployeeId = result.FirstOrDefault().EmployeeId,
@@ -437,6 +439,8 @@ namespace SME_API_News.Service
                             NameEn = result.FirstOrDefault().NameEn,
                             NameTh = result.FirstOrDefault().NameTh,
                             RoleCode = EmroleCode?.RoleCode ??null,
+                            BusinessUnitName = departname,
+
                         };
                         return newData;
                     }

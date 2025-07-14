@@ -68,6 +68,6 @@ namespace SME_API_News.Repository
         {
             return await _context.TEmployeeRoles.FirstOrDefaultAsync(e=>e.EmployeeCode == EmpId);
         }
-
+      
     }
 }
