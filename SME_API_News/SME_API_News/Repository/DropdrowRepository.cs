@@ -57,7 +57,7 @@ namespace SME_API_News.Repository
             try
             {
                 var query = (from u in _context.MCategories
-                             where u.IsActive ==true
+                             where u.IsActive ==true && u.CategorieCode !="C000"
                              select new DropdownModels
                              {
                                  Code = u.CategorieCode,
