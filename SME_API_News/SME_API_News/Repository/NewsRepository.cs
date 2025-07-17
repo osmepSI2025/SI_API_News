@@ -299,17 +299,17 @@ public class NewsRepository : INewsRepository
             {
                 existing.PublishDate = news.PublishDate;
             }
-            if (news.IsPublished != null) 
-            {
-                existing.IsPublished = news.IsPublished;
-            }
-            if (news.IsPin != null) 
-            {
-                existing.IsPin = news.IsPin;
-            }
+            //if (news.IsPublished != null) 
+            //{
+            //    existing.IsPublished = news.IsPublished;
+            //}
+            //if (news.IsPin != null)
+            //{
+            //    existing.IsPin = news.IsPin ?? false;
+            //}
 
-
-
+            existing.IsPin = news.IsPin ?? false;
+            existing.IsPublished = news.IsPublished??false;
             existing.UpdateBy = news.UpdateBy;
             existing.UpdateDate = DateTime.Now;
 
